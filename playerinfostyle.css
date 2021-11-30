@@ -1,0 +1,102 @@
+body {
+    margin:0;
+	background: #FFFFEF;
+}
+header {
+	background: #ffec00;
+    margin: 0;
+  }
+  .navtab {
+	  width: 85%;
+	  margin: auto;
+  }
+  header::after {
+	content: '';
+	display: table;
+	clear: both;
+  }
+  .logo {
+	float: left;
+	padding: 10px 0;
+	width: 18%;
+  }
+  nav {
+	float: right;
+  }
+  nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  nav li {
+	display: inline-block;
+	margin-right: 100px;
+	padding-top: 3.5%;
+	position: relative;
+  }
+  nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+  }
+  nav a:hover {
+	color: #000;
+  }
+
+  /* Animation */
+  nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #444;
+  
+	position: absolute;
+	top: 0;
+	width: 0%;
+  
+	transition: all ease-in-out 250ms;
+  }
+  nav a:hover::before {
+	width: 100%;
+  }
+  
+
+.title {
+	margin: 0;
+	background: #fff;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding: 10px;
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+	border: 4px solid #000;
+}
+
+.title li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.title h1 {
+	font-size: 1.5em;
+}
+.title img {
+	height: 140px;
+}
+
+.player_data {
+	color: #000;
+	font-weight: 900;
+	letter-spacing: 2px;
+	font-size: 20px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}

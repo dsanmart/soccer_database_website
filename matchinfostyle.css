@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+
+body {
+    margin:0;
+	background: #FFFFEF;
+}
+header {
+	background: #ffec00;
+    margin: 0;
+  }
+  .navtab {
+	  width: 85%;
+	  margin: auto;
+  }
+  header::after {
+	content: '';
+	display: table;
+	clear: both;
+  }
+  .logo {
+	float: left;
+	padding: 10px 0;
+	width: 18%;
+  }
+  nav {
+	float: right;
+  }
+  nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  nav li {
+	display: inline-block;
+	margin-right: 100px;
+	margin-top: 3.3%;
+	position: relative;
+  }
+  nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Noto Sans JP', sans-serif;
+  }
+  nav a:hover {
+	color: #000;
+  }
+  /* Animation */
+  nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #444;
+  
+	position: absolute;
+	top: -8;
+	width: 0%;
+  
+	transition: all ease-in-out 250ms;
+  }
+  nav a:hover::before {
+	width: 100%;
+  }
+
+/* Team name and logo box*/
+
+.title {
+	margin: 0;
+	background: #fff;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding: 10px;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+	border: 4px solid #000;
+}
+
+.title li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.title h1 {
+	font-size: 1.5em;
+}
+.title img {
+	height: 140px;
+}
+
+
+/* navtab 2*/
+
+.navtab2 {
+	width: 85%;
+	margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 20px;
+}
+.nav2 {
+	border: 0px;
+  }
+  .nav2 ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  .nav2 li {
+	display: inline-block;
+	margin-left: 15%;
+	position: relative;
+  }
+  .nav2 a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+  }
+  .nav2 a:hover {
+	color: #000;
+  }
+
+  /* Animation */
+  .nav2 a::before {
+	content: '';
+	display: block;
+	height: 4px;
+	background-color: #444;
+	position: absolute;
+	top: -8;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+  }
+  .nav2 a:hover::before {
+	width: 100%;
+  }
+
+
+/* Container with team score and escudos*/
+
+.container{
+    padding: 16px;
+    margin-left: auto;
+	margin-right: auto;
+    width: 60%;
+    background-color:#FAFAFA;
+    text-align: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.title-box{
+    margin-top: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+.title-box #goals{
+    font-size: 1.5em;
+}
+.team{
+    width: 100px;
+}
+
+.team #homeName,
+.team #awayName {
+	font-size: 0.7em;
+}
+.team img{
+    height: 54px;
+    width: auto;
+}
+.matches-table{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.match-tile{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.match-tile img{
+    height: 52px;
+}
+.match-tile p{
+    font-size: 1.2rem;
+}
+
+.match-tile #goals{
+    font-size: 1.8rem;
+}
+.match-tile .team{
+    width: 100px;
+}
+
+
+/* Style linea */
+.linea-bar{
+  width: 100%;
+}
+
+.contents {
+  background: #fff;
+  padding: 1px;
+  width: 90%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.teams {
+  margin: 0;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  width: 3%;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.teams li {
+display: inline-block;
+}
+.teams img{
+  width: 100%;
+}
+
+.bolabarsa{
+  width: 2%;
+  height: 2%;
+  border-width: 1px; 
+  position: relative;
+  top: 20px;
+  left: 45%;
+}
+
+.t1{
+  position: relative;
+  left: 45%; 
+  top: 20px;
+}
+
+.descanso{
+  width: 3px; /* Line width */
+  background-color: black; /* Line color */
+  height: 10px; /* Override in-line if you want specific height. */
+  position: relative;
+  left: 50%;
+}
+
+.linea {
+  width: 100%;
+  background-color: black;
+  border: none;
+  height: 3px;
+}
+
+/* Fin style linea*/
+
+
+.narrator_box {
+    margin-top: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 0.8em;
+}

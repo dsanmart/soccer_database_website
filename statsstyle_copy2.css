@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+
+body {
+    margin:0;
+	background: #FFFFEF;
+}
+header {
+	background: #ffec00;
+    margin: 0;
+  }
+  .navtab {
+	  width: 85%;
+	  margin: auto;
+  }
+  header::after {
+	content: '';
+	display: table;
+	clear: both;
+  }
+  .logo {
+	float: left;
+	padding: 10px 0;
+	width: 18%;
+  }
+  nav {
+	float: right;
+  }
+  nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  nav li {
+	display: inline-block;
+	margin-right: 100px;
+	padding-top: 3.5%;
+	position: relative;
+  }
+  nav a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Noto Sans JP', sans-serif;
+  }
+  nav a:hover {
+	color: #000;
+  }
+  /* Animation */
+  nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #444;
+  
+	position: absolute;
+	top: 0;
+	width: 0%;
+  
+	transition: all ease-in-out 250ms;
+  }
+  nav a:hover::before {
+	width: 100%;
+  }
+
+/* Team name and logo box*/
+
+.title {
+	margin: 0;
+	background: #fff;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding: 10px;
+	width: 80%;
+	margin-left: auto;
+    margin-right: auto;
+	border: 4px solid #000;
+	text-align: center;
+}
+
+.title li {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.title h1 {
+	font-size: 1.5em;
+}
+.title img {
+	height: 140px;
+}
+
+
+/* navtab 2*/
+
+.navtab2 {
+	width: 85%;
+	margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 20px;
+}
+.nav2 {
+	border: 0px;
+  }
+  .nav2 ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  .nav2 li {
+	display: inline-block;
+	margin-left: 15%;
+	position: relative;
+  }
+  .nav2 a {
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+  }
+  .nav2 a:hover {
+	color: #000;
+  }
+
+  /* Animation */
+  .nav2 a::before {
+	content: '';
+	display: block;
+	height: 4px;
+	background-color: #444;
+	position: absolute;
+	top: -8;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+  }
+  .nav2 a:hover::before {
+	width: 100%;
+  }
+
+/*Charts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.tables {
+	display: inline-block;
+}
+
+.chartBox {
+	background-color: white;
+	width: 35%;
+	margin: 0 auto;
+	padding: 30px;
+}
+.chartBox hr{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+h1 {
+	color: #000;
+	font-weight: 900;
+	letter-spacing: 2px;
+	font-size: 40px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	text-align: center;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+p {
+	text-align: center;
+}
